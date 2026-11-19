@@ -1,0 +1,4 @@
+<%= tag.span(**html_attributes) do %>
+    <%= render StatusGlyphComponent.new(kind: @kind) %>
+    <%= @label %>
+<% end %>

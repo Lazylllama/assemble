@@ -2,18 +2,18 @@ class ButtonComponent < ViewComponent::Base
     include ClassVariants::Helper
 
     class_variants(
-        base: "border rounded-xs gap-2 font-mono font-bold transition-all duration-100 ease-in-out text-t3",
+        base: "border rounded-xs gap-2 font-mono font-bold transition-all duration-100 ease-in-out text-t3 disabled:opacity-50",
         variants: {
             style: {
-                primary: "bg-cyan hover:bg-cyan-hover text-cyan-d border-cyan",
-                secondary: "text-cyan hover:bg-cyan-d border-cyan px-4",
-                ghost: "border-edge hover:border-fg-2 hover:bg-bg-2",
-                danger: "border-magenta-e text-magenta-t hover:bg-magenta-d",
-                text: ""
+                primary: "bg-cyan not-disabled:hover:bg-cyan-hover text-cyan-d border-cyan",
+                secondary: "text-cyan not-disabled:hover:bg-cyan-d border-cyan px-4",
+                ghost: "border-edge not-disabled:hover:border-fg-2 not-disabled:hover:bg-bg-2",
+                danger: "border-magenta-e text-magenta-t not-disabled:hover:bg-magenta-d",
+                text: "border-none underline underline-offset-2 text-fg-2 hover:text-fg px-1 font-medium"
             },
             size: {
-                default: "h-11 px-4 disabled:opacity-50",
-                block: ""
+                default: "h-11 px-4",
+                block: "h-14"
             }
         },
         compound_variants: [

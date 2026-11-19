@@ -1,0 +1,8 @@
+<div class="grid grid-cols-1 items-center gap-x-6 gap-y-4">
+  <% kinds.each do |kind| %>
+    <div class="flex flex-row items-center gap-2">
+        <span class="font-mono text-t1 text-fg-3"><%= kind.upcase %>:</span>
+        <%= render StatusComponent.new(kind: kind) %>
+    </div>
+  <% end %>
+</div>
