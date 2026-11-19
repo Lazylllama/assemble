@@ -117,3 +117,4 @@ Minitest + Capybara (Rails default). No RSpec.
 - Don't leak whether an e-mail is signed up (forms that take an e-mail answer the same either way)
 - Don't commit secrets. Use `bin/rails credentials:edit`
 - Don't add to the plan of the application without asking. The plan is in Figma, not in code, figma is found at https://www.figma.com/design/4LuZXDL2hDihFSI4aLYzYl/LBS-Tjofs
+- Don't make changes without being explicitly assigned. If you see a bug or missing feature, ask first.

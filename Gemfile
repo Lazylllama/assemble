@@ -66,3 +66,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "view_component", "~> 4.24"
+gem "class_variants", "~> 1.1"
+gem "tailwind_merge", "~> 1.5"

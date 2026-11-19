@@ -19,10 +19,16 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+local: &local
+  <<: *default
+  host: 127.0.0.1
+  port: 5433
+  username: postgres
+  password: postgres
 
 development:
-  <<: *default
-  database: assemble_development
+  <<: *local
+  database: assemble_dev
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -55,7 +61,7 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  <<: *local
   database: assemble_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
