@@ -1,0 +1,11 @@
+{
+  "tailwindCSS.experimental.configFile": "app/assets/tailwind/application.css",
+  "tailwindCSS.includeLanguages": {
+    "ruby": "html",
+    "erb": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class_variants\\(([\\s\\S]*?)\\n\\s*\\)", "\"([^\"]*)\""],
+    "class:\\s*\"([^\"]*)\""
+  ]
+}
