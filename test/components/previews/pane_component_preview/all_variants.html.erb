@@ -1,0 +1,7 @@
+<div class="grid grid-cols-3  items-center gap-x-6 gap-y-4">
+  <% tones.each do |tone| %>
+    <%= render PaneComponent.new(tone: tone, title: tone.capitalize) do %>
+        Något gick fel, eller rätt kanske
+    <% end %>
+  <% end %>
+</div>

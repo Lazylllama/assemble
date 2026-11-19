@@ -1,0 +1,7 @@
+<%= tag.div(**html_attributes) do %>
+    <div class="<%= title_classes %>">
+        <%= render StatusGlyphComponent.new(kind: @glyph) %>
+        <span><%= @title %></span>
+    </div>
+    <div class="<%= body_classes %>"><%= content %></div>
+<% end %>

@@ -3,7 +3,7 @@
 <div class="mx-auto max-w-6xl px-5 py-12">
   <h1 class="font-display text-t7">UI Kit</h1>
   <p class="mt-2 text-t3 text-fg-2">
-    Alla komponenter i app/components, i samma ordning som i Figma. Exemplen kommer från test/components/previews.
+    <%= render ButtonComponent.new(style: :text, href: "https://www.figma.com/design/4LuZXDL2hDihFSI4aLYzYl/LBS-Tjofs?node-id=203-136&p=f&m=dev%").with_content("Link to figma") %>
   </p>
 
   <% @sections.each do |section, names| %>

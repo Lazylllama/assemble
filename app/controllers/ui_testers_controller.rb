@@ -2,7 +2,7 @@ class UiTestersController < ApplicationController
   # Same sections, in the same order, as the "LBS UI Kit" page in Figma.
   # A component that isn't listed here still shows up, under "Övrigt".
   FIGMA_SECTIONS = {
-    "Actions + status" => %w[Button Status Badge Kbd],
+    "Actions + status" => %w[Button Status StatusGlyph Badge Kbd],
     "Forms" => %w[Field Checkbox Radio CheckRow TeamOption Disclosure],
     "Brand + shell" => %w[Lockup TopBar AdminTop AdminNav Tab],
     "Feedback" => %w[Pane Flash Dialog],
