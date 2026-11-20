@@ -1,0 +1,10 @@
+<% case @type %>
+<% when :text %>
+  <%= tag.input(type: "text", **html_attributes) %>
+<% when :select %>
+  <%= tag.select(**html_attributes) do %>
+    <%= content %>
+  <% end %>
+<% when :textarea %>
+  <%= tag.textarea(**html_attributes) %>
+<% end %>

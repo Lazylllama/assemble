@@ -1,0 +1,9 @@
+<div class="flex flex-row gap-8">
+    <%= render FieldComponent.new(type: :text, placeholder: "T.ex Alva") %>
+    <%= render FieldComponent.new(type: :select, placeholder: "Välj klass") do
+        tag.option("Välj klass", value: "", disabled: true, selected: true, hidden: true) +
+        tag.option("Klass 1", value: "klass-1") +
+        tag.option("Klass 2", value: "klass-2")
+    end %>
+    <%= render FieldComponent.new(type: :textarea, placeholder: "Information, önskemål, etc.") %>
+</div>

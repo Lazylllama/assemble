@@ -3,8 +3,8 @@ class UiTestersController < ApplicationController
   # A component that isn't listed here still shows up, under "Övrigt".
   FIGMA_SECTIONS = {
     "Actions + status" => %w[Button Status StatusGlyph Badge Kbd],
-    "Forms" => %w[Field Checkbox Radio CheckRow TeamOption Disclosure],
-    "Brand + shell" => %w[Lockup TopBar AdminTop AdminNav Tab],
+    "Forms" => %w[Field Checkbox Radio CheckRow TeamOption Disclosure FieldError FieldHint FieldLabel],
+    "Brand + shell" => %w[BrandLockup TopBar AdminTop AdminNav NavTab Tab],
     "Feedback" => %w[Pane Flash Dialog],
     "Data" => %w[TableHeader TableRow KvRow FactRow Step],
     "Lists + navigation" => %w[FilterItem FilterBar Search Crumbs BackLink SectionHead EmptyState Seats MemberRow TeamHead],
