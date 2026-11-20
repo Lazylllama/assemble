@@ -1,0 +1,4 @@
+<%= tag.label **html_attributes do %>
+    <%= content %>
+    <%= tag.span("(valfritt)", class: optional_classes) if @optional %>
+<% end %>

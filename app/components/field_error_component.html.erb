@@ -1,0 +1,6 @@
+<%= tag.div **html_attributes do %>
+    <%= tag.div(class: glyph_classes) do %>
+        <%= render StatusGlyphComponent.new(kind: :stop) %>
+    <% end %>
+    <%= tag.p content %>
+<% end %>
