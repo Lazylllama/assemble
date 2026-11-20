@@ -1,0 +1,6 @@
+<%= tag.div **html_attributes  do %>
+  <%= tag.a href: @href, class: text_classes do %>
+    <%= @label %>
+  <% end %>
+  <%= render BadgeComponent.new.with_content(@badge) if @badge %>
+<% end %>
