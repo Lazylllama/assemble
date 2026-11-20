@@ -1,0 +1,7 @@
+<%= tag.div(**html_attributes) do %>
+    <%= render BrandLockupComponent.new(logo: @logo, badge: @badge, role: @role) %>
+    <div class="gap-4 flex items-center">
+        <p class="<%= email_classes %>"><%= @email %></p>
+        <%= render ButtonComponent.new(style: :text).with_content("Logga ut") %>
+    </div>
+<% end %>

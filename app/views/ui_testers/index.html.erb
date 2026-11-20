@@ -17,7 +17,7 @@
           <% if (preview = @previews[name]) %>
             <div class="mt-3 flex flex-wrap items-start gap-6">
               <% preview_examples(preview).each do |example| %>
-                <figure class="flex flex-col gap-2">
+                <figure class="flex min-w-0 grow flex-col gap-2">
                   <figcaption class="font-mono text-t1 text-fg-3"><%= example.humanize %></figcaption>
                   <%= render_preview_example(preview, example) %>
                 </figure>

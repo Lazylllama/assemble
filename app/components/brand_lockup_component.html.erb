@@ -1,0 +1,5 @@
+<%= tag.div(**html_attributes) do %>
+    <%= tag.img(src: @logo, alt: "Logo", class: logo_classes) if @logo %>
+    <%= tag.span(class: badge_classes) { @badge } if @badge %>
+    <%= tag.span(class: role_classes) { @role } if @role %>
+<% end %>
