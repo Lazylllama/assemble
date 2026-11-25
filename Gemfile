@@ -67,6 +67,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "view_component", "~> 4.24"
+gem "view_component", "~> 4.25"
 gem "class_variants", "~> 1.1"
 gem "tailwind_merge", "~> 1.5"
